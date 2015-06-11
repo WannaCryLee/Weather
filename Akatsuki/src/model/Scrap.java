@@ -13,25 +13,32 @@ public class Scrap {
 	static Scanner scan;
 	
 	public static void main(String[] args) {
-		scan = new Scanner(System.in);
-		System.out.println("What is your zipcode?");
-		int zipcode = scan.nextInt();
+//		scan = new Scanner(System.in);
+//		System.out.println("What is your zipcode?");
+//		int zipcode = scan.nextInt();
+//		
+//		Weather weather = new Weather(zipcode);
+//		
+//		String forcast = weather.usingURL();
+//	
+//		String description = parse(forcast, "weather");
+//		description = description.substring(1, description.length() - 1);
+//		String main = parse(forcast, "main");
+//		String location = parse(forcast, "name");
+//		String sky = parse(description, "main");
+//		String temp = parse(main, "temp");
+//		
+//		System.out.println("Location: " + location);
+//		System.out.println("Temperature: " + temp + " Sky: " + sky);
+//				
+//		scan.close();
 		
-		Weather weather = new Weather(zipcode);
 		
-		String forcast = weather.usingURL();
-	
-		String description = parse(forcast, "weather");
-		description = description.substring(1, description.length() - 1);
-		String main = parse(forcast, "main");
-		String location = parse(forcast, "name");
-		String sky = parse(description, "main");
-		String temp = parse(main, "temp");
+		Traffic trafficData = new Traffic("Tacoma");
 		
-		System.out.println("Location: " + location);
-		System.out.println("Temperature: " + temp + " Sky: " + sky);
-				
-		scan.close();
+		trafficData.populateData();
+		System.out.println(trafficData.toString());
+		
 	}
 	
 	static String parse(String data, String keyword) {
