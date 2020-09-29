@@ -13,25 +13,7 @@ public class Scrap {
 	static Scanner scan;
 	
 	public static void main(String[] args) {
-//		scan = new Scanner(System.in);
-//		System.out.println("What is your zipcode?");
-//		int zipcode = scan.nextInt();
-//		
-//		Weather weather = new Weather(zipcode);
-//		
-//		String forcast = weather.usingURL();
-//	
-//		String description = parse(forcast, "weather");
-//		description = description.substring(1, description.length() - 1);
-//		String main = parse(forcast, "main");
-//		String location = parse(forcast, "name");
-//		String sky = parse(description, "main");
-//		String temp = parse(main, "temp");
-//		
-//		System.out.println("Location: " + location);
-//		System.out.println("Temperature: " + temp + " Sky: " + sky);
-//				
-//		scan.close();
+
 		
 		
 		Traffic trafficData = new Traffic("Tacoma");
