@@ -15,6 +15,8 @@ public class TestTraffic {
 	public void setUp() throws Exception {
 		aTraffic = new Traffic("Tacoma");
 		aTraffic.populateData();
+		aTraffic = new Traffic("Seattle");
+		aTraffic.populateData();
 	}
 
 	@Test
